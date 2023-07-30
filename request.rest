@@ -1,0 +1,90 @@
+    POST http://192.168.1.6:8001/push_data 
+    Content-Type: application/json
+
+    [{
+        "id_identification" : "CHN01",
+        "status":"Run"
+    }
+    ]
+
+###
+    POST http://localhost:8001/trial_push 
+    Content-Type: application/json
+
+    {
+        
+    }
+
+###
+GET http://localhost:8001/get-machine/0
+
+###
+GET http://localhost:8001/get-machine/7
+
+###
+POST http://localhost:8001/register-machine 
+Content-Type: application/json
+
+{
+    "original_name": "Top Coating",
+    "Number": "STN02",
+    "id_identification": "STN02",
+    "status" : "Not operate",
+    "image":"/assets/machinelogo/coldForging1.png",
+    "group": "5"
+}
+
+###
+POST  http://localhost:8001/remove-machine 
+Content-Type: application/json
+
+{
+    "role":{
+
+    },
+    "data":{
+
+    }
+}
+###
+GET http://localhost:8001/current-session-data/1
+###
+GET http://localhost:8001/current-session-data-option/latest
+###
+GET http://localhost:8001/current-session-data-option/current
+
+###history data
+GET http://localhost:8001/get-history/CHN1/st/end
+
+
+####router.post('/format_history_operation', clear_operation_history)
+###router.post('/format_history_shiftly', clear_shiftly_history)
+### area berbahaya
+POST http://localhost:8001/format_history_operation
+
+Content-Type: application/json
+
+{
+    "option":{
+        "status": "Alarm"
+    }
+}
+###
+POST http://localhost:8001/format_history_shiftly
+Content-Type: application/json
+
+{
+    "option":{
+        "id_identification":"CPN1",
+        "data":{
+            "total_run": 1350
+        }
+    }
+}
+
+###
+GET http://localhost:8001/Operator-screen-get-init-data 
+
+
+
+

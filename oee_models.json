@@ -1,0 +1,57 @@
+[
+  {
+    "Machine": {
+      "id_identification": "CHN01",
+      "original_name": "Cold Forging",
+      "status": "Run"
+    },
+    "Machine_id_identification": "CHN01",
+    "Time_data": {
+      "batch_start": {
+        "$date": {
+          "$numberLong": "1677944742302"
+        }
+      },
+      "batch_end": {
+        "$date": {
+          "$numberLong": "1683056742000"
+        }
+      },
+      "shift": "1"
+    },
+    "Planning": {
+      "Schedule": "Tupper ware",
+      "Part_number": "11124-9872",
+      "Output": "270",
+      "Cycle_time": 40,
+      "Down_time_in_seconds": 3600,
+      "Operating_time": 14400,
+      "Relative_DT": 34
+    },
+    "Actual": {
+      "Output": 22,
+      "Output_reject": 0,
+      "Cycle_time": 0,
+      "Down_time_in_seconds": 34,
+      "Operating_time": 57611
+    },
+    "Labour": {
+      "Operator": {
+        "ID": "918505",
+        "Name": "Jefri"
+      },
+      "Leader": {
+        "ID": "808508",
+        "Name": "Suyanto"
+      }
+    },
+    "OEE_data": {
+      "Performance": 1,
+      "Availability": 0.015283880716258228,
+      "Quality": 1,
+      "OEE": 0.015284411636995223
+    },
+    "Active": true,
+    "__v": 0
+  }
+]
